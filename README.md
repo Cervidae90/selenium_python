@@ -44,7 +44,7 @@ python -m pip install -r requirements.txt
 
 ## 2. Running tests
 **IMPORTANT! Make sure you:**
-- are in `/python-seleium-framework/python_selenium_framework` directory 
+- are in `/python_selenium_framework/python_selenium_framework` directory 
 - have virtual environment (venv) activated -> if not, go to 1. d)
 
 **Example run (chrome browser is set by default)**
