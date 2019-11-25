@@ -6,8 +6,8 @@ Contents:
 
 ## 1. Installing and setting up python, environment and libraries
 
-### a) Install latest Python 3.x.x (e.g. 3.8.0)
-https://www.python.org/downloads/
+### a) Install latest Python
+Go to https://www.python.org/downloads/ and get latest Python 3.x.x (e.g 3.8.0)
 
 Then to make sure it's installed properly please type in console:
 ```
@@ -18,12 +18,13 @@ The output should be ```Python {installed_version}```, e.g:
 Python 3.8.0
 ```
 
-### b) Install virtualenv (virtual environment)
+### b) Install virtual environment
+A ```virtual environment```is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
+
 In your console type:
 ```
 pip install virtualenv
 ```
-#### Note: if you are somehow using Python 2.x.x and you want to use 3.x.x instead but you don't know how to override newer version, please do the following:  ```virtualenv -p python3 venv```. This will install python 3.x.x in your virtual environment.
 
 Then to make sure it's installed properly type in console:
 ```
@@ -34,15 +35,18 @@ The output should be ```{installed_version}```:
 ```
 16.0.0
 ```
-### c) Create virtual environment (with python 3)
+### c) Create virtual environment
 In ```/python-selenium-framework``` directory (where README.md file is) run:
 ```
 virtualenv venv
 ```
+
 #### Note: If you face some errors please do:
 ```
 python -m venv <venv_path>
 ```
+
+#### Note: if you are somehow using Python 2.x.x and you want to use 3.x.x instead but you don't know how to override newer version, please do the following:  ```virtualenv -p python3 venv```. This will install python 3.x.x in your virtual environment.
 
 ### d) Run virtual environment
 It is essentially that you are using virtual environment while proceeding next steps. Please always pay attention to that.
