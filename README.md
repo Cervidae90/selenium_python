@@ -2,48 +2,105 @@
 
 ## 1. Installing and setting up python, environment and libraries
 
-### a) Install newest python 3
+### a) Install latest Python 3 (e.g. 3.8)
 https://www.python.org/downloads/
 
-### b) Install virtualenv
-```pip install virtualenv```
+Then to make sure it's installed properly please type in console:
+```
+python --version
+```
+The output should be ```Python {installed_version}```, e.g:
+```
+Python 3.8.0
+```
 
+### b) Install virtualenv (virtual environment)
+In your console type:
+```
+pip install virtualenv
+```
+
+Then to make sure it's installed properly type in console:
+```
+virtualenv --version
+```
+The output should be ```{installed_version}```:
+ e.g:
+```
+16.0.0
+```
 ### c) Create virtual environment (with python 3)
-at /python-selenium-framework folder (where README.md file is) run:
+In ```/python-selenium-framework``` directory (where README.md file is) run:
 ```
 virtualenv venv
 ```
-NOTE: If you face some errors please do:
+####NOTE: If you face some errors please do:
 ```
 python -m venv <venv_path>
 ```
 
 ### d) Run virtual environment
-Mac:
+It is essentially that you are using virtual environment while proceeding next steps. Please always pay attention to that.
+
+To activate virtual env, type:
+
+On Mac:
 ```
 source venv/bin/activate
 ```
-Windows:
+On Windows:
 ```
 venv/Scripts/activate
 ```
-Now you're using virtual environment -> (venv) should be visible in the console, e.g:
+Now you're using virtual environment. ```(venv)``` should be visible in the console, e.g:
 ```
 (venv) ➜  bin git:() 
 ```
 
-### e) Install requirements (on your virtual environment) 
+### e) Install requirements (dependencies/libraries)
+If you are already using virtual environment, type:
 ```
 pip install -r requirements.txt
 ```
-NOTE: If you face some errors please do:
+Then to make sure it's installed properly type:
+```
+pip freeze
+```
+The output should look like:
+```
+atomicwrites==1.3.0
+attrs==19.1.0
+certifi==2019.6.16
+chardet==3.0.4
+colorama==0.4.1
+configparser==3.8.1
+crayons==0.2.0
+idna==2.8
+importlib-metadata==0.19
+more-itertools==7.2.0
+packaging==19.1
+pluggy==0.12.0
+py==1.8.0
+pyparsing==2.4.2
+pytest==5.0.1
+pytest-html==1.22.0
+pytest-metadata==1.8.0
+requests==2.22.0
+selenium==3.141.0
+six==1.12.0
+urllib3==1.25.3
+wcwidth==0.1.7
+webdriver-manager==1.8.2
+zipp==0.5.2
+```
+####NOTE: If you face some errors please do:
 ```
 python -m pip install -r requirements.txt
 ```
 
 
 ## 2. Running tests
-**IMPORTANT! Make sure you:**
+####Make sure you:
 - are in `/python_selenium_framework/python_selenium_framework` directory 
 - have virtual environment (venv) activated -> if not, go to 1. d)
 
@@ -52,7 +109,9 @@ python -m pip install -r requirements.txt
 ```
 python -m pytest
 ```
-## 3. Others**
+
+
+## 3. Others
 
 ### to run tests with other browser:
 ```
