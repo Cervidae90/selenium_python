@@ -23,7 +23,7 @@ In your console type:
 ```
 pip install virtualenv
 ```
-####Note: if you are somehow using Python 2.x.x and you want to use 3.x.x instead but you don't know how to override newer version, please do the following:  ```virtualenv -p python3 venv```. This will install python 3.x.x in your virtual environment.
+#### Note: if you are somehow using Python 2.x.x and you want to use 3.x.x instead but you don't know how to override newer version, please do the following:  ```virtualenv -p python3 venv```. This will install python 3.x.x in your virtual environment.
 
 Then to make sure it's installed properly type in console:
 ```
@@ -39,7 +39,7 @@ In ```/python-selenium-framework``` directory (where README.md file is) run:
 ```
 virtualenv venv
 ```
-####Note: If you face some errors please do:
+#### Note: If you face some errors please do:
 ```
 python -m venv <venv_path>
 ```
@@ -98,14 +98,14 @@ wcwidth==0.1.7
 webdriver-manager==1.8.2
 zipp==0.5.2
 ```
-####NOTE: If you face some errors please do:
+#### NOTE: If you face some errors please do:
 ```
 python -m pip install -r requirements.txt
 ```
 
 
 ## 2. Running tests
-####Make sure you:
+#### Make sure you:
 - are in `/python_selenium_framework/python_selenium_framework` directory 
 - have virtual environment (venv) activated -> if not, go to 1. d)
 
