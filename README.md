@@ -1,8 +1,12 @@
 # AutomatedWebSelenium
+Contents:
+1. Installing and setting up python, environment and libraries
+2. Running tests
+3. Other
 
 ## 1. Installing and setting up python, environment and libraries
 
-### a) Install latest Python 3 (e.g. 3.8)
+### a) Install latest Python 3.x.x (e.g. 3.8.0)
 https://www.python.org/downloads/
 
 Then to make sure it's installed properly please type in console:
@@ -19,6 +23,7 @@ In your console type:
 ```
 pip install virtualenv
 ```
+####Note: if you are somehow using Python 2.x.x and you want to use 3.x.x instead but you don't know how to override newer version, please do the following:  ```virtualenv -p python3 venv```. This will install python 3.x.x in your virtual environment.
 
 Then to make sure it's installed properly type in console:
 ```
@@ -34,7 +39,7 @@ In ```/python-selenium-framework``` directory (where README.md file is) run:
 ```
 virtualenv venv
 ```
-####NOTE: If you face some errors please do:
+####Note: If you face some errors please do:
 ```
 python -m venv <venv_path>
 ```
@@ -66,7 +71,7 @@ Then to make sure it's installed properly type:
 ```
 pip freeze
 ```
-The output should look like:
+The output should look similar to this (some libraries may be different):
 ```
 atomicwrites==1.3.0
 attrs==19.1.0
@@ -111,7 +116,7 @@ python -m pytest
 ```
 
 
-## 3. Others
+## 3. Other
 
 ### to run tests with other browser:
 ```
